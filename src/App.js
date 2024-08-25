@@ -21,7 +21,7 @@ function App() {
         return;
       }
 
-      const res = await axios.post('https://bajaj-finserv-backend-five.vercel.app/', parsedInput);
+      const res = await axios.post('https://bajaj-finserv-backend-five.vercel.app/bfhl', parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError('Invalid JSON format or server error.');
